@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finn min kvittering</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, Segoe UI, Arial, sans-serif; margin: 0; padding: 0;
+    color: #1a1a1a; background: #fafafa; line-height: 1.6;
+  }
+  header {
+    padding: 60px 20px 40px; text-align: center; background: #ffffff; border-bottom: 1px solid #eee;
+  }
+  header h1 { font-size: 2.2em; margin: 0 0 10px; }
+  header p { font-size: 1.15em; color: #555; max-width: 560px; margin: 0 auto; }
+  main { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+  h2 { font-size: 1.3em; margin-top: 2.2em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  .badge {
+    display: inline-block; background: #eef2ff; color: #333; padding: 4px 12px;
+    border-radius: 20px; font-size: 0.85em; margin: 4px 4px 4px 0;
+  }
+  .links { text-align: center; margin: 2.5em 0; }
+  .links a {
+    display: inline-block; padding: 10px 22px; margin: 6px; border-radius: 8px;
+    background: #1a1a1a; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .links a.secondary { background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a; }
+  footer { text-align: center; padding: 30px 20px; color: #888; font-size: 0.85em; }
+  .lang-switch { text-align: center; padding-top: 20px; }
+  .lang-switch button {
+    font: inherit; padding: 6px 14px; margin: 0 4px; border-radius: 20px;
+    border: 1px solid #999; background: #fff; cursor: pointer;
+  }
+  .lang-switch button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  [data-lang]:not(.active) { display: none; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button type="button" onclick="setLang('no')" id="btn-no">Norsk</button>
+  <button type="button" onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<div data-lang="no" class="active">
+<header>
+  <h1>Finn min kvittering</h1>
+  <p>Hold styr på kvitteringer, garantier og reklamasjonsrett — uten at dataene dine noen gang lagres på en server vi kontrollerer.</p>
+  <div>
+    <span class="badge">Windows</span>
+    <span class="badge">Android</span>
+    <span class="badge">iPhone</span>
+  </div>
+</header>
+
+<main>
+  <h2>Hvorfor Finn min kvittering?</h2>
+  <ul>
+    <li><strong>Du eier dataene dine.</strong> Alt lagres i din egen Google Drive, OneDrive, Dropbox, eller lokalt — aldri på en server vi kontrollerer.</li>
+    <li><strong>Skann kvitteringer</strong> direkte med kameraet, med automatisk tekstgjenkjenning (OCR) slik at du kan søke i innholdet senere.</li>
+    <li><strong>Garanti og reklamasjonsrett</strong> spores automatisk, med tydelig status på hva som snart utløper.</li>
+    <li><strong>Serienummer, historikk og posisjon</strong> kan legges til per kvittering — praktisk ved service, reparasjon eller salg.</li>
+    <li><strong>Fungerer på tvers av enheter</strong> — Windows, Android og iPhone synker sømløst gjennom lagringsstedet du selv velger.</li>
+    <li><strong>Ingen annonser, ingen datasalg, ingen abonnement.</strong> Én engangssum, og du er ferdig.</li>
+  </ul>
+
+  <h2>Last ned</h2>
+  <p>Samme kvitteringer, garantier og innstillinger på tvers av alle enhetene dine — installer på så mange du vil, dataene synkroniseres automatisk gjennom lagringsstedet du velger.</p>
+  <div class="links">
+    <a href="https://play.google.com/store/apps/details?id=no.finnminkvittering.app">Android (Google Play)</a>
+    <a class="secondary" href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/FinnMinKvittering-Setup.exe">Windows</a>
+  </div>
+  <p style="text-align:center; color:#888; font-size:0.9em;">iPhone kommer snart.</p>
+
+  <h2>Personvern</h2>
+  <p>Les hele personvernerklæringen på
+    <a href="https://fantonaldapps-cmd.github.io/personvern/finn-min-kvittering.html">fantonaldapps-cmd.github.io/personvern</a>.
+  </p>
+</main>
+</div>
+
+<div data-lang="en">
+<header>
+  <h1>Finn min kvittering</h1>
+  <p>Keep track of receipts, warranties, and your statutory right to complain — without your data ever being stored on a server we control.</p>
+  <div>
+    <span class="badge">Windows</span>
+    <span class="badge">Android</span>
+    <span class="badge">iPhone</span>
+  </div>
+</header>
+
+<main>
+  <h2>Why Finn min kvittering?</h2>
+  <ul>
+    <li><strong>You own your data.</strong> Everything is stored in your own Google Drive, OneDrive, Dropbox, or locally — never on a server we control.</li>
+    <li><strong>Scan receipts</strong> directly with your camera, with automatic text recognition (OCR) so you can search the content later.</li>
+    <li><strong>Warranty and statutory rights</strong> are tracked automatically, with a clear status on what's about to expire.</li>
+    <li><strong>Serial number, history, and location</strong> can be added per receipt — handy for service, repairs, or resale.</li>
+    <li><strong>Works across devices</strong> — Windows, Android, and iPhone sync seamlessly through the storage location you choose yourself.</li>
+    <li><strong>No ads, no data sales, no subscription.</strong> One flat fee, and you're done.</li>
+  </ul>
+
+  <h2>Download</h2>
+  <p>The same receipts, warranties, and settings across all your devices — install on as many as you like, your data syncs automatically through the storage location you choose.</p>
+  <div class="links">
+    <a href="https://play.google.com/store/apps/details?id=no.finnminkvittering.app">Android (Google Play)</a>
+    <a class="secondary" href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/FinnMinKvittering-Setup.exe">Windows</a>
+  </div>
+  <p style="text-align:center; color:#888; font-size:0.9em;">iPhone coming soon.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the full privacy policy at
+    <a href="https://fantonaldapps-cmd.github.io/personvern/finn-min-kvittering.html">fantonaldapps-cmd.github.io/personvern</a>.
+  </p>
+</main>
+</div>
+
+<footer>
+  Finn min kvittering — no.finnminkvittering.app
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-lang]').forEach(function(el) {
+    el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+  });
+  document.getElementById('btn-no').classList.toggle('active', lang === 'no');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  localStorage.setItem('fmk-lang', lang);
+}
+setLang(localStorage.getItem('fmk-lang') || 'no');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send til PC</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, Segoe UI, Arial, sans-serif; margin: 0; padding: 0;
+    color: #1a1a1a; background: #fafafa; line-height: 1.6;
+  }
+  header {
+    padding: 60px 20px 40px; text-align: center; background: #ffffff; border-bottom: 1px solid #eee;
+  }
+  header h1 { font-size: 2.2em; margin: 0 0 10px; }
+  header p { font-size: 1.15em; color: #555; max-width: 560px; margin: 0 auto; }
+  main { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+  h2 { font-size: 1.3em; margin-top: 2.2em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  .badge {
+    display: inline-block; background: #eef2ff; color: #333; padding: 4px 12px;
+    border-radius: 20px; font-size: 0.85em; margin: 4px 4px 4px 0;
+  }
+  .links { text-align: center; margin: 2.5em 0; }
+  .links a {
+    display: inline-block; padding: 10px 22px; margin: 6px; border-radius: 8px;
+    background: #1a1a1a; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .links a.secondary { background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a; }
+  .merk {
+    background: #fff8e6; border: 1px solid #e8c46a; border-radius: 8px;
+    padding: 14px 18px; margin: 1.6em 0; font-size: 0.95em;
+  }
+  footer { text-align: center; padding: 30px 20px; color: #888; font-size: 0.85em; }
+  .lang-switch { text-align: center; padding-top: 20px; }
+  .lang-switch button {
+    font: inherit; padding: 6px 14px; margin: 0 4px; border-radius: 20px;
+    border: 1px solid #999; background: #fff; cursor: pointer;
+  }
+  .lang-switch button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  [data-lang]:not(.active) { display: none; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button type="button" onclick="setLang('no')" id="btn-no">Norsk</button>
+  <button type="button" onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<div data-lang="no" class="active">
+<header>
+  <h1>Send til PC</h1>
+  <p>Send bilder og filer fra mobilen rett til en mappe på PC-en din. Ingen sky, ingen konto, ingenting som passerer en server vi kontrollerer.</p>
+  <div>
+    <span class="badge">Windows</span>
+    <span class="badge">Android</span>
+    <span class="badge">iPhone</span>
+  </div>
+</header>
+
+<main>
+  <h2>Hva den gjør</h2>
+  <ul>
+    <li><strong>Rett fra telefon til PC.</strong> Filene går over ditt eget nettverk, direkte mellom de to enhetene. Ingenting lastes opp noe sted.</li>
+    <li><strong>Saksmapper som gir mening.</strong> Skriv et registreringsnummer, en adresse eller et ordrenummer — bildene havner i riktig mappe med én gang. Sender flere personer til samme sak, får hver sin undermappe.</li>
+    <li><strong>Tåler at nettet ryker.</strong> Mister telefonen forbindelsen midt i en stor video, fortsetter overføringen der den slapp i stedet for å begynne på nytt.</li>
+    <li><strong>PC-en bekrefter hver fil.</strong> Ingen fil blir synlig i mappa før innholdet er kontrollert. Du får aldri «ferdig» på en fil som ikke kom hel fram.</li>
+    <li><strong>Bare telefoner du selv har sluppet inn.</strong> Paring med en engangskode fra PC-skjermen. Mister du en telefon, fjerner du den fra lista og den mister tilgangen med én gang.</li>
+    <li><strong>13 språk.</strong> Norsk, engelsk, svensk, dansk, finsk, tysk, nederlandsk, polsk, litauisk, ukrainsk, spansk, fransk og italiensk.</li>
+  </ul>
+
+  <h2>Last ned</h2>
+  <p>PC-programmet tar imot. Mobilappen sender. Du trenger begge.</p>
+  <div class="links">
+    <a href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/SendTilPC-Windows.zip">Windows</a>
+    <a class="secondary" href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/SendTilPC.apk">Android (APK)</a>
+  </div>
+  <p style="text-align:center; color:#888; font-size:0.9em;">iPhone kommer snart.</p>
+
+  <div class="merk">
+    <strong>Dette er en tidlig versjon.</strong> Windows-programmet og Android-appen finner
+    hverandre, parer og sender filer med gjenopptagelse. Deling rett fra bildegalleriet er
+    ikke på plass ennå — du åpner appen først og velger bildene der.
+  </div>
+
+  <h2>Slik kommer du i gang</h2>
+  <ul>
+    <li>Pakk ut Windows-mappa og start <code>SendTilPC.exe</code>. Ingen installasjon nødvendig.</li>
+    <li>Velg mappa filene skal lagres i. <strong>Ikke velg noe under Dokumenter, Bilder eller Skrivebord</strong> — Windows' vern mot løsepengevirus blokkerer skriving der, uten å si fra. Programmet oppdager det og forklarer.</li>
+    <li>Svar <strong>ja</strong> når Windows spør om brannmuren, på private nettverk.</li>
+    <li>Trykk «Par ny telefon» og skriv de seks sifrene i appen på telefonen.</li>
+  </ul>
+
+  <h2>Personvern</h2>
+  <p>Bildene dine sendes direkte fra telefonen til PC-en over ditt eget nettverk. De passerer
+     ingen skytjeneste, ingen server, og ingenting hos oss. Vi mottar ingen data i det hele
+     tatt — det finnes ingen konto å opprette og ingenting å logge på.</p>
+  <p>Programmet får kun tilgang til den ene mappa du selv peker ut, og telefonen kan aldri lese
+     eller skrive utenfor den.</p>
+</main>
+</div>
+
+<div data-lang="en">
+<header>
+  <h1>Send to PC</h1>
+  <p>Send photos and files from your phone straight into a folder on your PC. No cloud, no account, nothing passing through a server we control.</p>
+  <div>
+    <span class="badge">Windows</span>
+    <span class="badge">Android</span>
+    <span class="badge">iPhone</span>
+  </div>
+</header>
+
+<main>
+  <h2>What it does</h2>
+  <ul>
+    <li><strong>Straight from phone to PC.</strong> Files travel across your own network, directly between the two devices. Nothing is uploaded anywhere.</li>
+    <li><strong>Folders that make sense.</strong> Type a registration number, an address, or an order number — the photos land in the right folder immediately. When several people send to the same job, each gets their own subfolder.</li>
+    <li><strong>Survives a dropped connection.</strong> If the phone loses the network halfway through a large video, the transfer continues where it left off instead of starting over.</li>
+    <li><strong>The PC verifies every file.</strong> No file becomes visible in the folder until its contents have been checked. You never get "done" on a file that didn't arrive intact.</li>
+    <li><strong>Only phones you let in.</strong> Pairing uses a one-time code shown on the PC screen. Lose a phone, remove it from the list, and it loses access immediately.</li>
+    <li><strong>13 languages.</strong> Norwegian, English, Swedish, Danish, Finnish, German, Dutch, Polish, Lithuanian, Ukrainian, Spanish, French and Italian.</li>
+  </ul>
+
+  <h2>Download</h2>
+  <p>The PC program receives. The mobile app sends. You need both.</p>
+  <div class="links">
+    <a href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/SendTilPC-Windows.zip">Windows</a>
+    <a class="secondary" href="https://github.com/fantonaldapps-cmd/nettsider/releases/latest/download/SendTilPC.apk">Android (APK)</a>
+  </div>
+  <p style="text-align:center; color:#888; font-size:0.9em;">iPhone coming soon.</p>
+
+  <div class="merk">
+    <strong>This is an early version.</strong> The Windows program and the Android app find
+    each other, pair, and transfer files with resume support. Sharing straight from the photo
+    gallery isn't in place yet — you open the app first and pick the photos there.
+  </div>
+
+  <h2>Getting started</h2>
+  <ul>
+    <li>Unpack the Windows folder and run <code>SendTilPC.exe</code>. No installation needed.</li>
+    <li>Choose the folder files should be saved into. <strong>Don't pick anything under Documents, Pictures or Desktop</strong> — Windows' ransomware protection blocks writing there without saying so. The program detects this and explains.</li>
+    <li>Answer <strong>yes</strong> when Windows asks about the firewall, for private networks.</li>
+    <li>Press "Pair a new phone" and type the six digits into the app on your phone.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Your photos are sent directly from the phone to the PC across your own network. They pass
+     through no cloud service, no server, and nothing of ours. We receive no data at all —
+     there is no account to create and nothing to sign in to.</p>
+  <p>The program only has access to the one folder you point it at, and the phone can never
+     read or write outside it.</p>
+</main>
+</div>
+
+<footer>
+  Send til PC — no.sendtilpc.app
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-lang]').forEach(function(el) {
+    el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+  });
+  document.getElementById('btn-no').classList.toggle('active', lang === 'no');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  localStorage.setItem('stp-lang', lang);
+}
+setLang(localStorage.getItem('stp-lang') || 'no');
+</script>
+
+</body>
+</html>
